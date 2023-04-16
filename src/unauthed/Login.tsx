@@ -1,5 +1,9 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+
 export default function LoginPage() {
+  useEffect(() => {
+    document.title = 'OpenMerce | Login'
+  }, [])
   return (
     <main>
       <h1 className="text-4xl">Login Page</h1>
